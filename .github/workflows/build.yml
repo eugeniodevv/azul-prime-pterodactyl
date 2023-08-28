@@ -40,4 +40,4 @@ jobs:
           push: true
           platforms: linux/amd64
           tags: |
-            ghcr.io/OPsidian/azul-prime-pterodactyl:azul-prime_${{ matrix.tag }}
+            ghcr.io/eugeniodevv/azul-prime-pterodactyl:azul-prime_${{ matrix.tag }}
