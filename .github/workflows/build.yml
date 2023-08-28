@@ -14,8 +14,10 @@ jobs:
         tag:
           - 17
           - 17-libargon
-          - 16
-          - 16-libargon
+          - 15
+          - 15-libargon
+          - 13
+          - 13-libargon
           - 11
           - 11-libargon
           - 8
