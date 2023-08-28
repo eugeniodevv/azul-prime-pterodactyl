@@ -1,11 +1,10 @@
-FROM azul/prime-debian:17
+FROM azul/prime-debian:16
 
 LABEL author="eugeniodevv"
 
 RUN apt update -y \
 	&& apt install -y \
-		curl lsof ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 libfreetype6 \
-		libargon2-0-dev
+		curl lsof ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 libfreetype6
 
 RUN useradd -m -d /home/container -s /bin/bash container
 USER container

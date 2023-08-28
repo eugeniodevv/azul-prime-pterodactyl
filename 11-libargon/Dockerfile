@@ -1,4 +1,4 @@
-FROM azul/prime-debian:17
+FROM azul/prime-debian:11
 
 LABEL author="eugeniodevv"
 
