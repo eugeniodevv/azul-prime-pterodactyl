@@ -2,15 +2,15 @@ FROM azul/prime-debian:8
 
 LABEL author="eugeniodevv"
 
+LABEL org.opencontainers.image.source="https://github.com/eugeniodevv/azul-prime-pterodactyl"
+LABEL org.opencontainers.image.licenses=WTFPL
+
 RUN apt update -y \
 	&& apt install -y \
-		curl lsof ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 libfreetype6
+		curl lsof ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 libfreetype6 libstdc++6 libargon2-dev
 
-ENV LANG=en_US.UTF-8
-ENV LANGUAGE=en_US.UTF-8
-ENV LC_ALL=en_US.UTF-8
+RUN useradd -d /home/container -m container
 
-RUN useradd -m -d /home/container -s /bin/bash container
 USER container
 ENV USER=container HOME=/home/container
 WORKDIR /home/container
