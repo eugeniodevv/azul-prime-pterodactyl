@@ -13,15 +13,10 @@ jobs:
       matrix:
         tag:
           - 17
-          - 17-libargon
           - 15
-          - 15-libargon
           - 13
-          - 13-libargon
           - 11
-          - 11-libargon
           - 8
-          - 8-libargon
     steps:
       - name: Git checkout
         uses: actions/checkout@v3
